@@ -1,7 +1,7 @@
 <!-- Home will inherit from layout.html and is used to specify data displayed on this page-->
 {% extends "layout.html" %} 
 {% block content %} 
-{% for posts in posts %}
+{% for post in posts %}
 <p>"{{ post.title }}"&nbsp
    by {{ post.user.username }}</p>
 <p>{{ post.content }}</p>
