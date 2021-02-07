@@ -1,0 +1,37 @@
+body {
+    background-color: #00008b; 
+    color: #fffaf0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 20px 140px 20px 140px;
+    text-align: center;
+}
+
+h1 {
+    background-color: da#008b8b;
+    color: #fffaf0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 35px;
+    text-align: center;
+
+}
+
+/*update formatting for links on page - researched links on <https://css-tricks.com/css-basics-styling-links-like-boss/>
+Order is necessary to be in specific order (link, visited, hover, active, focus) */
+a {
+    color: #0febeb;
+}
+
+a:visited {
+    color: #a9a9a9;
+}
+a:hover {
+    color: #a9a9a9;
+}
+a:active {
+    color: #000000;
+}
+
+
+
+
+
