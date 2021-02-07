@@ -5,7 +5,8 @@ from blog.models import User, Post
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template('home.html', title='Home')
+    posts = Post.query.all()
+    return render_template('home.html', posts=posts)
 
 
 @app.route("/about")
