@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block content %}
+<img src="{{ url_for('static', filename='img/thankyou.jpg') }}">
+<h1><marquee behavior="alternate" width="450" bgcolor="cyan">Thank you for registering!</marquee></h1>
+<p>>>> Your registration was completed successfully <<< </p>
+<p>Click on the links at the top of this page to navigate back to home.</p>
+{% endblock content %}
