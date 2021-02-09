@@ -1,6 +1,8 @@
 {% block content %}
 <form method="POST" action="">
     {{ form.csrf_token }}
+    {{ form.firstname.label }} {{ form.firstname }}
+    {{ form.lastname.label }} {{ form.lastname }}
     {{ form.username.label }} {{ form.username }}
     {{ form.email.label }} {{ form.email }}
     {{ form.password.label }} {{ form.password }}
