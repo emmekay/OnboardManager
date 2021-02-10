@@ -1,7 +1,8 @@
-from flask import render_template, url_for, request, redirect 
+from flask import render_template, url_for, request, redirect, flash 
 from blog import app, db
 from blog.models import User, Post
-from blog.forms import RegistrationForm 
+from blog.forms import RegistrationForm, LoginForm
+from flask_login import login_user 
 
 @app.route("/")
 @app.route("/home")
@@ -37,3 +38,21 @@ def register():
         db.session.commit()
         return redirect(url_for('thankyou'))
     return render_template('register.html', title='Register', form=form)
+
+@app.route("/login", methods=['GET','POST'])
+def login():
+    form = LoginForm()
+    if form.validate_on_submit():
+        user = User.query.filter_by(email=form.email.data).first()
+        if user is not None and user.verify_password(form.password.data):
+            login_user(user)
+            flash('Login Successful!')
+            return redirect(url_for('home'))
+        else:
+            flash('Email or password is incorrect. Please try again.')
+    return render_template('login.html',title='Login',form=form)
+
+def validate_email(self, email):
+    email = User.query.filter_by(email=email.data).first()
+    if not email:
+        flash('User does not exist!')
