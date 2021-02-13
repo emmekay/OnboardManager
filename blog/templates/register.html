@@ -1,12 +1,14 @@
+{% extends "layout.html" %}
 {% block content %}
 <form method="POST" action="">
-    {{ form.csrf_token }}
-    {{ form.username.label }} {{ form.username }}
-    {{ form.firstname.label }} {{ form.firstname }}
-    {{ form.lastname.label }} {{ form.lastname }}
-    {{ form.email.label }} {{ form.email }}
-    {{ form.password.label }} {{ form.password }}
-    {{ form.confirm_password.label }} {{ form.confirm_password }}
+    {{ form.csrf_token }} <br> <br>
+    <h1>Sign up below to access member's privileges!</h1>
+    {{ form.username.label }} {{ form.username }} <br> <br>
+    {{ form.firstname.label }} {{ form.firstname }} <br> <br>
+    {{ form.lastname.label }} {{ form.lastname }} <br> <br>
+    {{ form.email.label }} {{ form.email }} <br> <br>
+    {{ form.password.label }} {{ form.password }} <br> <br>
+    {{ form.confirm_password.label }} {{ form.confirm_password }} <br> <br>
     <input type="submit" value="Register">
 </form>
 {% endblock content %}

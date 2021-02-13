@@ -1,7 +1,13 @@
 {% extends "layout.html" %}
 {% block content %}
-<img src="{{ url_for('static', filename='img/thankyou.jpg') }}">
-<h1><marquee behavior="alternate" width="400" bgcolor="cyan">Thank you for registering!</marquee></h1> <!-- #1 on README - pickatutorial.com--> 
-<p>>>> Your registration was completed successfully <<< </p>
-<p>Click on the links at the top of this page to navigate back to home.</p>
+<br>
+<br>
+<img src="{{ url_for('static', filename='img/thankyou1.gif') }}" style=background-color:white;>
+<h1><marquee behavior="alternate" width="600" bgcolor="#00008b">>>> Registration completed successfully! <<<</marquee></h1> <!-- #1 on README - pickatutorial.com--> 
+<p>>>> Click below to login <<<</p>
+<p>
+    <a href="login.html">
+        <img src="{{ url_for('static', filename='img/login.jpg') }}">
+    </a>
+</p>
 {% endblock content %}
