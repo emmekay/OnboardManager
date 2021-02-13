@@ -33,7 +33,7 @@ def post(post_id):
 def register():
     form = RegistrationForm()
     if request.method == 'POST':
-        user = User(username=form.username.data, email=form.email.data, password=form.password.data)
+        user = User(username=form.username.data, firstname=form.firstname.data, lastname=form.lastname.data, email=form.email.data, password=form.password.data)
         db.session.add(user)
         db.session.commit()
         return redirect(url_for('thankyou'))

@@ -2,6 +2,8 @@
 <form method="POST" action="">
     {{ form.csrf_token }}
     {{ form.username.label }} {{ form.username }}
+    {{ form.firstname.label }} {{ form.firstname }}
+    {{ form.lastname.label }} {{ form.lastname }}
     {{ form.email.label }} {{ form.email }}
     {{ form.password.label }} {{ form.password }}
     {{ form.confirm_password.label }} {{ form.confirm_password }}
