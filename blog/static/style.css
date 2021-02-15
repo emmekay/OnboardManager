@@ -15,6 +15,11 @@ h1 {
 
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /*update formatting for links on page - researched links on <https://css-tricks.com/css-basics-styling-links-like-boss/>
 Order is necessary to be in specific order (link, visited, hover, active, focus) */
 a {
