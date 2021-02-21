@@ -46,13 +46,10 @@ def login():
         user = User.query.filter_by(email=form.email.data).first()
         if user is not None and user.verify_password(form.password.data):
             login_user(user)
-            flash('Login Successful!')
+            flash("Login Successful!")
             return redirect(url_for('home'))
         else:
-            flash('Email or password is incorrect. Please try again.')
+            flash("Email or password is incorrect. Please try again.")
     return render_template('login.html',title='Login',form=form)
 
-def validate_email(self, email):
-    email = User.query.filter_by(email=email.data).first()
-    if not email:
-        flash('User does not exist!')
+
