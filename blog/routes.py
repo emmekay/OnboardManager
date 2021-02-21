@@ -55,4 +55,5 @@ def login():
 @app.route("/logout")
 def logout():
     logout_user()
-    return redirect(url_for('thankyou'))
+    flash("You have successfully logged out.  You will be redirected to the homepage.")
+    return redirect(url_for('home')) 
