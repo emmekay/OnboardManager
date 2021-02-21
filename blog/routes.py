@@ -2,7 +2,7 @@ from flask import render_template, url_for, request, redirect, flash
 from blog import app, db
 from blog.models import User, Post
 from blog.forms import RegistrationForm, LoginForm
-from flask_login import login_user 
+from flask_login import login_user, logout_user 
 
 @app.route("/")
 @app.route("/home")
@@ -52,4 +52,7 @@ def login():
             flash("Email or password is incorrect. Please try again.")
     return render_template('login.html',title='Login',form=form)
 
-
+@app.route("/logout")
+def logout():
+    logout_user()
+    return redirect(url_for('thankyou'))
