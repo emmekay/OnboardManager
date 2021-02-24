@@ -44,3 +44,16 @@ class User(UserMixin, db.Model):
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
+
+
+class Comment(db.Model):
+  id = db.Column(db.Integer, primary_key=True)
+  date = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+  content = db.Column(db.Text, nullable=False)
+  parent_id = db.Column(db.Integer, db.ForeignKey('comment.id'), nullable=True)
+  post_id = db.Column(db.Integer, db.ForeignKey('post.id'), nullable=False)
+  author_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+  parent = db.relationship('Comment', backref='comment_parent', remote_side=id, lazy=True)
+
+  def __repr__(self):
+    return f"Post('{self.date}', '{self.content}')"
