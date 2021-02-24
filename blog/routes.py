@@ -32,11 +32,12 @@ def post(post_id):
 @app.route("/register", methods=['GET', 'POST'])
 def register():
     form = RegistrationForm()
-    if request.method == 'POST':
+    if form.validate_on_submit():
         user = User(username=form.username.data, firstname=form.firstname.data, lastname=form.lastname.data, email=form.email.data, password=form.password.data)
         db.session.add(user)
         db.session.commit()
-        return redirect(url_for('thankyou'))
+        flash('Registration successful!')
+        return redirect(url_for('home'))
     return render_template('register.html', title='Register', form=form)
 
 @app.route("/login", methods=['GET','POST'])
