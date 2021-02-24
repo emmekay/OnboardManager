@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm 
 from wtforms import StringField, PasswordField, SubmitField
-from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError, Regexp 
+from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError, Regexp, InputRequired  
 from blog.models import User 
 
 class RegistrationForm(FlaskForm):
@@ -27,3 +27,6 @@ class LoginForm(FlaskForm):
     password = PasswordField('Password',validators=[DataRequired()])
     submit = SubmitField('Login')
 
+class CommentForm(FlaskForm):
+    comment = StringField('Comment',validators=[InputRequired()])
+    submit = SubmitField('Post Comment')
