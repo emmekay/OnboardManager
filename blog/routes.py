@@ -1,5 +1,4 @@
-from flask import render_template, url_for, request, redirect, flash
-from flask_login.utils import login_required 
+from flask import render_template, url_for, request, redirect, flash 
 from blog import app, db
 from blog.models import User, Post, Comment 
 from blog.forms import RegistrationForm, LoginForm, CommentForm
@@ -41,7 +40,7 @@ def post_comment(post_id):
         db.session.commit()
         flash("Your comment has been added to the post.", "Success")
         return redirect(f'/post/{post.id}')
-    comments = Comments.query.filter(Comment.post_id == post.id)
+    comments = Comment.query.filter(Comment.post_id == post.id)
     return render_template('post.html', post=post, comments=comments, form=form)
 
 @app.route("/register", methods=['GET', 'POST'])
