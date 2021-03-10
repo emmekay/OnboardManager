@@ -1,13 +1,10 @@
 <!--Layout is template used for all pages.  Header, footer, side bar, etc. -->
 <!DOCTYPE html>
-<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
-
-
-
+<html>
 <head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 <body onload="titleMarquee()">
-
     <title>- Emilia's Website -</title> <!-- #2 on README - https://code2care.org/pages/add-animated-scrolling-to-html-page-title-script#:~:text= -->
 </body>
 <script type="text/javascript">
@@ -64,7 +61,7 @@
 </body>
 
 <footer>
-<img src="{{ url_for('static', filename='img/bannersmall.png') }}">
+<img src="{{ url_for('static', filename='img/bannerfooter.jpg') }}">
 
     
 </footer>

@@ -65,6 +65,9 @@ def login():
             return redirect(url_for('home'))
         else:
             flash("Email or password is incorrect. Please try again.")
+
+            return render_template('login.html',form=form)
+            
     return render_template('login.html',title='Login',form=form)
 
 @app.route("/logout")

@@ -15,8 +15,16 @@ h1 {
 
 }
 
+footer {
+    background-color: #00008b; 
+    color: #fffaf0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 20px 140px 20px 140px;
+    text-align: center;
+}
+
 img {
-    max-width: 100%;
+    max-width: 200%;
     height: auto;
 }
 
