@@ -1,7 +1,7 @@
 body {
     background-color: #00008b; 
     color: #fffaf0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Italic', sans-serif;
     margin: 20px 140px 20px 140px;
     text-align: center;
 }
@@ -9,16 +9,25 @@ body {
 h1 {
     background-color: da#008b8b;
     color: #fffaf0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Italic', sans-serif;
     margin: 35px;
     text-align: center;
 
 }
 
+p {
+    background-color: #7777bb; 
+    color: #ede4fd;
+    font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+    margin: 20px 140px 20px 140px;
+    text-align: center;
+
+ }
+
 footer {
     background-color: #00008b; 
     color: #fffaf0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Italic', sans-serif;
     margin: 20px 140px 20px 140px;
     text-align: center;
 }

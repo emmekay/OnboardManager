@@ -3,4 +3,3 @@
 
 # 2 https://code2care.org/pages/add-animated-scrolling-to-html-page-title-script#:~:text= - Used to find how to add animation to HTML page title script
 
-
