@@ -1,5 +1,0 @@
-from blog import db
-
-tag_blog = db.Table('tag_blog', db.Column('tag_id', db.Integer, db.ForeignKey('tag.id'), primary_key=True), db.Column('blog_id', db.Integer, db.ForeignKey('blog.id'), primary_key=True))  
-
-# Reference 3 - Code is copied from tutorial 

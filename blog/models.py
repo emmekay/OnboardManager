@@ -1,8 +1,8 @@
 from datetime import datetime
-from blog import db, login_manager 
+from blog import db, login_manager
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin 
-from blog.tag_blog_table import tag_blog 
+ 
 
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True) 
@@ -27,7 +27,6 @@ class User(UserMixin, db.Model):
   password = db.Column(db.String(60), nullable=False)
   post = db.relationship('Post', backref='user', lazy=True)
   comment= db.relationship('Comment', backref='user', lazy=True)
-  tags = db.relationship('Tag', secondary=tag_blog, backref=db.backref('blogs_associated', lazy="dynamic")) # Reference 3 - This code taken from tutorial
 
 
   is_admin = db.Column(db.Boolean, nullable=False, default=False)
@@ -62,12 +61,3 @@ class Comment(db.Model):
 
   def __repr__(self):
     return f"Post('{self.date}', '{self.content}')"
-
-
-class Tag(db.Model):
-  id = db.Column(db.Integer, primary_key=True)
-  name = db.Column(db.String(30))
-
-  @property
-  def serialize(self):
-    return {'id': self.id, 'name': self.name} # Reference 3 - This code taken from tutorial 

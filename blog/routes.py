@@ -1,8 +1,10 @@
-from flask import render_template, url_for, request, redirect, flash 
+from flask import render_template, url_for, request, redirect, flash, Blueprint 
 from blog import app, db
 from blog.models import User, Post, Comment 
 from blog.forms import RegistrationForm, LoginForm, CommentForm
 from flask_login import login_user, logout_user, login_required, current_user  
+
+blogs= Blueprint('blogs',__name__) # Reference 3 
 
 @app.route("/")
 @app.route("/home")
@@ -42,6 +44,9 @@ def post_comment(post_id):
         return redirect(f'/post/{post.id}')
     comments = Comment.query.filter(Comment.post_id == post.id)
     return render_template('post.html', post=post, comments=comments, form=form)
+
+
+           
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
