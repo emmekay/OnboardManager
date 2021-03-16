@@ -4,3 +4,5 @@
 # 2 https://code2care.org/pages/add-animated-scrolling-to-html-page-title-script#:~:text= - Used to find how to add animation to HTML page title script
 
 # 3 https://getbootstrap.com/ - Used for formatting webpage w/ CSS and JavaScript 
+
+# 4 https://stackoverflow.com/questions/9749742/wtforms-can-i-add-a-placeholder-attribute-when-i-init-a-field - Used to figure out how to put a placeholder in forms 
