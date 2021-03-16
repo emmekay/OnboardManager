@@ -3,4 +3,4 @@
 
 # 2 https://code2care.org/pages/add-animated-scrolling-to-html-page-title-script#:~:text= - Used to find how to add animation to HTML page title script
 
-# 3 https://soshace.com/how-to-create-a-personal-blogging-website-part-1/ - Used to research how to create tags for blog 
+# 3 https://getbootstrap.com/ - Used for formatting webpage w/ CSS and JavaScript 

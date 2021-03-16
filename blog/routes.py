@@ -4,8 +4,6 @@ from blog.models import User, Post, Comment
 from blog.forms import RegistrationForm, LoginForm, CommentForm
 from flask_login import login_user, logout_user, login_required, current_user  
 
-blogs= Blueprint('blogs',__name__) # Reference 3 
-
 @app.route("/")
 @app.route("/home")
 def home():
@@ -20,10 +18,6 @@ def about():
 @app.route("/thankyou")
 def thankyou():
     return render_template('thankyou.html', title='Thank You!')
-
-@app.route("/cv")
-def cv():
-    return render_template('cv.html', title='My Work Experience')
 
 @app.route("/post/<int:post_id>")
 def post(post_id):
