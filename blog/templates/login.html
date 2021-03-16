@@ -2,8 +2,8 @@
 {% block content %}
 <form method="POST" action="">
     {{ form.csrf_token }}
-    {{ form.email.label }} {{ form.email }}
-    {{ form.password.label }} {{ form.password }}
+    {{ form.email.label }} {{ form.email(placeholder="  Enter your Email") }}
+    {{ form.password.label }} {{ form.password(placeholder="  Enter your Password") }}
     <input type="submit" value="Login">
 </form>
 {% endblock content %}
