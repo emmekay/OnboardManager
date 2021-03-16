@@ -6,3 +6,6 @@
 # 3 https://getbootstrap.com/ - Used for formatting webpage w/ CSS and JavaScript 
 
 # 4 https://stackoverflow.com/questions/9749742/wtforms-can-i-add-a-placeholder-attribute-when-i-init-a-field - Used to figure out how to put a placeholder in forms 
+
+# 5 https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xvi-full-text-search - Used to create search function for blog poosts 
+
