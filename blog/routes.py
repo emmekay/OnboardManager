@@ -1,7 +1,7 @@
 from flask import render_template, url_for, request, redirect, flash, Blueprint 
 from blog import app, db
-from blog.models import User, Post, Comment 
-from blog.forms import RegistrationForm, LoginForm, CommentForm
+from blog.models import User, Post, Comment, Tag 
+from blog.forms import RegistrationForm, LoginForm, CommentForm, TagForm
 from flask_login import login_user, logout_user, login_required, current_user  
 
 @app.route("/")
@@ -24,7 +24,10 @@ def post(post_id):
     post = Post.query.get_or_404(post_id)
     comments = Comment.query.filter(Comment.post_id == post.id)
     form = CommentForm()
-    return render_template('post.html', title=post.title, post=post, comments=comments, form=form)
+    tags = Tag.query.filter(Tag.post_id == post.id)
+    form = TagForm()
+
+    return render_template('post.html', title=post.title, post=post, comments=comments, tags=tags, form=form)
 
 @app.route('/post/<int:post_id>/comment', methods=['GET', 'POST'])
 @login_required
@@ -39,6 +42,20 @@ def post_comment(post_id):
     comments = Comment.query.filter(Comment.post_id == post.id)
     return render_template('post.html', post=post, comments=comments, form=form)
 
+
+@app.route('/post/<int:post_id>/tag', methods=['GET', 'POST'])
+@login_required
+def post_tag(post_id):
+    post = Post.query.get_or_404(post_id)
+    form = TagForm()
+    if form.validate_on_submit():
+        db.session.add(Tag(content=form.tag.data,
+                               post_id=post.id, author_id=current_user.id))
+        db.session.commit()
+        flash("Your tag has been saved to the post.", "Success")
+        return redirect(f'/post/{post.id}')
+    tags = Tag.query.filter(Tag.post_id == post.id)
+    return render_template('post.html', post=post, tags=tags, form=form)
 
            
 
