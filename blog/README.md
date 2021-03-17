@@ -9,3 +9,4 @@
 
 # 5 https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xvi-full-text-search - Used to create search function for blog poosts 
 
+# 6 https://codepen.io/hesguru/pen/BaybqXv - by hongde_he - Used to create star rating - 

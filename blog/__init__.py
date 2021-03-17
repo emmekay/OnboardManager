@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
+#from elasticsearch import Elasticsearch
        
 
 app = Flask(__name__)
@@ -20,3 +21,10 @@ admin = Admin(app, name='Admin panel', template_mode='bootstrap3')
 admin.add_view(AdminView(User, db.session))
 admin.add_view(AdminView(Post, db.session))
 admin.add_view(AdminView(Comment, db.session))
+
+
+#def create_app(config_class=Config):
+ #   app = Flask(__name__)
+  #  app.config.from_object(config_class)
+#
+ #   app.elasticsearch = Elasticsearch([app.config['ELASTICSEARCH_URL']]) if app.config['ELASTICSEARCH_URL'] else None 

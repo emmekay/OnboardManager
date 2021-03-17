@@ -4,15 +4,15 @@
     {{ form.csrf_token }} <br>
     <img src="{{ url_for('static', filename='img/members.jpg') }}" >
     <h1>Sign up below to access member's privileges!</h1>
-    {{ form.username.label }} {{ form.username(placeholder="Choose a Username") }} {{ form.username(placeholder="Choose a Username") }} <!-- Ref # 4 - Placeholder info for all placeholder links in this section --> <br> <br>
-    {{ form.firstname.label }} {{ form.firstname(placeholder="Enter your First Name") }} {{ form.firstname(placeholder="Enter your First Name") }}<br> <br>
-    {{ form.lastname.label }} {{ form.lastname(placeholder="Enter your Last Name") }} {{ form.lastname(placeholder="Enter your Last Name") }}<br> <br>
-    {{ form.email.label }} {{ form.email(placeholder="Enter your Email") }} {{ form.email(placeholder="Enter your Email") }}<br> <br>
-    {{ form.password.label }} {{ form.password(placeholder="Create Password") }} {{ form.password(placeholder="Create Password") }}<br> <br>
+    {{ form.username.label }} {{ form.username(placeholder="Choose a Username") }}  <!-- Ref # 4 - Placeholder info for all placeholder links in this section --> <br> <br>
+    {{ form.firstname.label }} {{ form.firstname(placeholder="Enter your First Name") }} <br> <br>
+    {{ form.lastname.label }} {{ form.lastname(placeholder="Enter your Last Name") }} <br> <br>
+    {{ form.email.label }} {{ form.email(placeholder="Enter your Email") }} <br> <br>
+    {{ form.password.label }} {{ form.password(placeholder="Create Password") }} <br> <br>
             {% for error in form.password.errors %}
             <span style="color: #cbcf8e; font-size: xx-large;">[{{ error }}]</span><br>
             {% endfor %}
-    {{ form.confirm_password.label }} {{ form.confirm_password(placeholder="Confirm Password") }} {{ form.confirm_password(placeholder="Confirm Password") }} <br> <br>
+    {{ form.confirm_password.label }} {{ form.confirm_password(placeholder="Confirm Password") }} <br> <br>
             {% for error in form.confirm_password.errors %}
             <span style="color: #cbcf8e; font-size: xx-large;">[{{ error }}]</span><br>
             {% endfor %}

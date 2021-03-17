@@ -5,6 +5,7 @@ from flask_login import UserMixin
  
 
 class Post(db.Model):
+    __searchable__ = ['body']
     id = db.Column(db.Integer, primary_key=True) 
     date = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     title = db.Column(db.Text, nullable=False) 
@@ -61,3 +62,8 @@ class Comment(db.Model):
 
   def __repr__(self):
     return f"Post('{self.date}', '{self.content}')"
+
+
+#class Config(object):
+
+ # ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
