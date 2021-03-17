@@ -64,6 +64,3 @@ class Comment(db.Model):
     return f"Post('{self.date}', '{self.content}')"
 
 
-#class Config(object):
-
- # ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
