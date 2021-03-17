@@ -50,3 +50,21 @@
     </div>
 </form>
 {% endblock content %}
+
+{% for tag in tags %}
+<p>"{{ tag.content }}" &nbsp <small>Author: {{tag.user.username }}</small></p>
+{% endfor %}
+
+<form method="POST" action="{{ url_for('post_tag', post_id=post.id) }}">
+    {{ form.hidden_tag() }}
+    <div class="">
+        {{ form.tag.label }} {{ form.tag }}
+        {% for error in form.tag.errors %}
+        <span style="color: #910404;">[{{ error }}]</span>
+        {% endfor %}
+    </div>
+    <div class="">
+        {{ form.submit() }}
+    </div>
+</form>
+
