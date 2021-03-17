@@ -64,3 +64,14 @@ class Comment(db.Model):
     return f"Post('{self.date}', '{self.content}')"
 
 
+class Tag(db.Model):
+  id = db.Column(db.Integer, primary_key=True)
+  date = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+  content = db.Column(db.Text, nullable=False)
+  parent_id = db.Column(db.Integer, db.ForeignKey('tag.id'), nullable=True)
+  post_id = db.Column(db.Integer, db.ForeignKey('post.id'), nullable=False)
+  author_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+  parent = db.relationship('Tag', backref='tag_parent', remote_side=id, lazy=True)
+
+  def __repr__(self):
+    return f"Tag('{self.date}', '{self.content}')"
