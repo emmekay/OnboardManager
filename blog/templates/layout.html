@@ -31,6 +31,9 @@
         <a href="{{ url_for('register') }}">Register</a>&nbsp|
         <a href="{{ url_for('login') }}">Login</a>&nbsp| <br>&nbsp|
         <a href="{{ url_for('admin.index') }}">Admin</a>&nbsp| <br>&nbsp|
+
+    
+
         
         {% if current_user.is_authenticated %}
         Hello, {{ current_user.username }}!&nbsp|<br>
@@ -67,6 +70,8 @@
         <a href="{{ url_for('about') }}">About Me</a>&nbsp|
         <a href="{{ url_for('register') }}">Register</a>&nbsp|
         <a href="{{ url_for('login') }}">Login</a>&nbsp| <br>
+        <a href="https://www.instagram.com/mighteteche" target="_blank">
+            <img src="{{ url_for('static', filename='img/insta1.png') }}"></a>
         <a href="https://www.linkedin.com/in/emilia-kobina" target="_blank">
             <img src="{{ url_for('static', filename='img/linkedin.jpg') }}"></a>
         <small>&copy; Copyright 2021, Emilia Kobina </small>

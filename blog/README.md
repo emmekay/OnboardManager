@@ -1,3 +1,15 @@
+CMT120 - Web Application Development Coursework
+
+1. URL of your website:
+
+2. Student number:
+
+3. Full (40 characters) CHECKSUM of your last commit on GitLab:
+
+[OPTIONAL] References:
+
+
+
 # Sourcing
 # 1 http://www.pickatutorial.com/tutorial/html/simpletextanimation.htm - Used for finding coding for text animation on thankyou.html
 
@@ -10,6 +22,8 @@
 # 5 https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xvi-full-text-search - Used to create search function for blog poosts 
 
 # 6 https://codepen.io/hesguru/pen/BaybqXv - by hongde_he - Used to create star rating - 
+
+# 7 https://pngtree.com/freepng/social-media-icons-set-facebook_3556903.html Accessed 3/17/2021 - Modified from Social Media Buttons Image social media clipart PNG Designed By DigitAm from <a href="https://pngtree.com">Pngtree.com</a>
 
 Use this method if in code 
 // Code to perform bubble sort
