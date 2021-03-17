@@ -23,7 +23,7 @@ CMT120 - Web Application Development Coursework
 
 # 6 https://codepen.io/hesguru/pen/BaybqXv - by hongde_he - Used to create star rating - 
 
-# 7 https://pngtree.com/freepng/social-media-icons-set-facebook_3556903.html Accessed 3/17/2021 - Modified from Social Media Buttons Image social media clipart PNG Designed By DigitAm from <a href="https://pngtree.com">Pngtree.com</a>
+# 7 https://www.iconfinder.com/iconsets/fantasy-social-1 - used for all social media icons 
 
 Use this method if in code 
 // Code to perform bubble sort
