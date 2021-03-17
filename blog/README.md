@@ -10,3 +10,24 @@
 # 5 https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xvi-full-text-search - Used to create search function for blog poosts 
 
 # 6 https://codepen.io/hesguru/pen/BaybqXv - by hongde_he - Used to create star rating - 
+
+Use this method if in code 
+// Code to perform bubble sort
+// taken from Stack Overflow post by A.C Oder 20-6-2004
+// accessed 4-9-2018
+// https://stackoverflow.com/questions/........./bubblesort-implementation
+[[ CODE here ]]
+// end of referenced code.
+
+
+/**
+* Returns a sorted array 
+* This code was adapted from Stack Overflow post by A.C Oder 20-6-2004
+* accessed 4-9-2018
+* https://stackoverflow.com/questions/........./bubblesort-implementation
+* Added code to allow for sorting high to low or low to high
+* see further comments for adaptions
+*
+* @param input unsorted array* @param true high to low, false low to high
+* @return sorted array
+*/
