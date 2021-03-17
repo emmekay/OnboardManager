@@ -2,7 +2,10 @@
 {% block body %}
 {% if current_user.is_admin %}
 Welcome to the administrator's panel {{ current_user.username }}!
+<br>&nbsp| <a href="{{ url_for('home') }}">Return to Main Homepage &nbsp;</a>|&nbsp<a href="{{ url_for('logout') }}">Logout</a>&nbsp
+&nbsp|
 {% else %}
-Hello, please login as an administrator to access this panel &nbsp|<a href="{{ url_for('login') }}">Login&nbsp;</a>
+Hello, please login as an administrator to access this panel  &nbsp
+<br><a href="{{ url_for('login') }}">Login&nbsp;</a>
 {% endif %}
 {% endblock %}

@@ -4,6 +4,7 @@
     {{ form.csrf_token }}
     {{ form.email.label }} {{ form.email(placeholder="  Enter your Email") }}
     {{ form.password.label }} {{ form.password(placeholder="  Enter your Password") }}
+    {{ form.remember_login() }} {{ form.remember_login.label }}
     <input type="submit" value="Login">
 </form>
 {% endblock content %}
