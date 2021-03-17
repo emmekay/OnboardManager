@@ -1,4 +1,6 @@
 from datetime import datetime
+
+from sqlalchemy.orm import backref
 from blog import db, login_manager
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin 
@@ -28,6 +30,7 @@ class User(UserMixin, db.Model):
   password = db.Column(db.String(60), nullable=False)
   post = db.relationship('Post', backref='user', lazy=True)
   comment= db.relationship('Comment', backref='user', lazy=True)
+  tag = db.relationship('Tag', backref='user', lazy=True)
 
 
   is_admin = db.Column(db.Boolean, nullable=False, default=False)
