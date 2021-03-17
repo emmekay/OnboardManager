@@ -31,3 +31,8 @@ class LoginForm(FlaskForm):
 class CommentForm(FlaskForm):
     comment = StringField('Comment',validators=[InputRequired()])
     submit = SubmitField('Post Comment')
+
+
+class TagForm(FlaskForm):
+    tag = StringField('Tag', validators=[InputRequired()])
+    submit = SubmitField('Post Tags')
