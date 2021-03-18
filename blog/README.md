@@ -1,12 +1,12 @@
 CMT120 - Web Application Development Coursework
 
-1. URL of your website:
+1. URL of your website: http://finalblog-finalblog.apps.cs.cf.ac.uk/about
 
-2. Student number:
+2. Student number: 2101138
 
-3. Full (40 characters) CHECKSUM of your last commit on GitLab:
+3. Full (40 characters) CHECKSUM of your last commit on GitLab: 
 
-[OPTIONAL] References:
+Blog Post References:
 
 Garfinkel, S., 2004. Security and Usability: Keep It Simple. [online] CSO Online. Available at: <https://www.csoonline.com/article/2117849/security-and-usability--keep-it-simple.html> [Accessed 12 March 2021].
 
@@ -17,10 +17,17 @@ Singh, A., 2021. Top 10 VS Code extensions for 2021 - LogRocket Blog. [online] L
 Techopedia.com. 2021. What is Software Security? - Definition from Techopedia. [online] Available at: <https://www.techopedia.com/definition/24866/software-security> [Accessed 15 March 2021].
 
 
-Ugino, M., 2018. Everything You Need To Know About Chatbots For Your Online Business - Marketing Insider Group. [online] Marketing Insider Group. Available at: <https://marketinginsidergroup.com/content-marketing/everything-need-know-chatbots-online-business/> [Accessed 17 March 2021].
+Ugino, M., 2018. Everything You Need To Know About Chatbots For Your Online Business - Marketing Insider Group. [online] Marketing Insider Group. Available at: <https://marketinginsidergroup.com/content-marketing/everything-need-know-chatbots-online-business/> [Accessed 17 March 2021]. - Used for Chatbot picture 
 
 
-# Sourcing
+#Pictures Used Sourcing 
+Photo by FLY:D on Unsplash - Picture used with Security, Usability Posted royalty free from Unsplash
+
+(Ugino, 2018) - Sourced above - Used for chatbot picture 
+
+Photo by Ferenc Almasi on Unsplash - Used for VS Code Picture 
+
+# Code Sourcing
 # 1 http://www.pickatutorial.com/tutorial/html/simpletextanimation.htm - Used for finding coding for text animation on thankyou.html
 
 # 2 https://code2care.org/pages/add-animated-scrolling-to-html-page-title-script#:~:text= - Used to find how to add animation to HTML page title script
@@ -39,23 +46,3 @@ Ugino, M., 2018. Everything You Need To Know About Chatbots For Your Online Busi
 
 # 9 https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp - modified code from here to create sidebar styling 
 
-Use this method if in code 
-// Code to perform bubble sort
-// taken from Stack Overflow post by A.C Oder 20-6-2004
-// accessed 4-9-2018
-// https://stackoverflow.com/questions/........./bubblesort-implementation
-[[ CODE here ]]
-// end of referenced code.
-
-
-/**
-* Returns a sorted array 
-* This code was adapted from Stack Overflow post by A.C Oder 20-6-2004
-* accessed 4-9-2018
-* https://stackoverflow.com/questions/........./bubblesort-implementation
-* Added code to allow for sorting high to low or low to high
-* see further comments for adaptions
-*
-* @param input unsorted array* @param true high to low, false low to high
-* @return sorted array
-*/
