@@ -35,7 +35,9 @@ Ugino, M., 2018. Everything You Need To Know About Chatbots For Your Online Busi
 
 # 7 https://www.iconfinder.com/iconsets/fantasy-social-1 - used for all social media icons 
 
-# 8 https://stackoverflow.com/questions/24491514/link-bootstrap-button - modified code to create buttons for ascending & descending posts 
+# 8 https://getbootstrap.com/docs/4.0/components/buttons/ - modified code to create buttons for ascending & descending posts 
+
+# 9 https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp - modified code from here to create sidebar styling 
 
 Use this method if in code 
 // Code to perform bubble sort

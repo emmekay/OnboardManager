@@ -32,4 +32,3 @@ class CommentForm(FlaskForm):
     comment = StringField('Comment')
     submit = SubmitField('Post Comment')
 
-

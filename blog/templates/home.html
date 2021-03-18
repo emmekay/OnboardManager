@@ -1,13 +1,13 @@
 <!-- Home will inherit from layout.html and is used to specify data displayed on this page-->
 {% extends "layout.html" %} 
 {% block content %} 
-<h1>Welcome Home!</h1><br>
-<a href="descposts" class="btn btn-primary">Sort Post Descending</a><nbsp> </nbsp> <a href="ascposts" class="btn btn-primary">Sort Post Ascending</a><br><br> 
+<h1>All Blog Posts</h1>
+<a href="descposts" class="btn btn-outline-primary">Sort Post Descending</a><nbsp>   </nbsp> <a href="ascposts" class="btn btn-outline-primary">Sort Post Ascending</a><br><br> <!-- Ref 8 - Modified code to create buttons--> 
 {% for post in posts %}
 <a href="{{ url_for('post', post_id=post.id) }}"><img src="{{ url_for('static', filename='img/' + post.image_file) }}"><br>
    "{{post.title}}"</a>&nbsp <br>
    by {{ post.user.username }}<br>
-{{ post.content }}</p>
+<p>{{ post.content }}</p>
 
 {% endfor %}
 {% endblock content %}

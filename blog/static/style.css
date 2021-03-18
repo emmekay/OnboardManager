@@ -10,6 +10,9 @@ header {
     font-size: larger;
 }
 
+content {
+    padding-left: 20px;
+}
 h1 {
     background-color: da#008b8b;
     color: #fffaf0;
@@ -28,10 +31,14 @@ h2 {
 
 }
 
+h3 {
+    text-align: left;
+}
+
 p {
-    background-color: #ececf3; 
-    color: #6e32d6;
-    font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+    background-color: #393991; 
+    color: #f3f1f5;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
     margin: 20px 140px 20px 140px;
     text-align: center;
 
@@ -45,11 +52,6 @@ footer {
     margin: 20px 140px 20px 140px;
     text-align: center;
     
-}
-
-img {
-    max-width: 200%;
-    height: auto;
 }
 
 /*update formatting for links on page - researched links on <https://css-tricks.com/css-basics-styling-links-like-boss/>
@@ -71,9 +73,8 @@ a:active {
 /* Star Rating */
 /* Below code taken from Ref # 6 - Star Rating - All code below to end comment tag has been copied */
 .rate {
-    float: left;
     height: 46px;
-    padding: 0 10px;
+    padding: 30px;
 }
 .rate:not(:checked) > input {
     position:absolute;
@@ -107,4 +108,45 @@ a:active {
 }
 /* All code above to previous comment tag copied from Ref # 6 */
 
+
+/* # 9 - Modified below code from here to create sidebar */
+/* sidebar style */
+/* Style the sidebar - fixed full height */
+.sidebar {
+  color: rgb(16, 158, 194);
+  height: 100%;
+  width: 300px;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background-color: rgb(11, 67, 170);
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+/* Style sidebar links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #818181;
+  display: block;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Style the main content */
+.main {
+  margin-left: 300px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
 
