@@ -2,8 +2,8 @@
 {% block content %}
 <img src="{{ url_for('static', filename='img/' + post.image_file) }}">
 
-<p>"{{ post.title }}"&nbsp <br> Author: {{ post.user.username }}</p>
-<p>{{ post.content }}</p>
+<p><large>"{{ post.title }}"</large>&nbsp <br> Author: {{ post.user.username }}<br>
+{{ post.content }}</p>
 
 <form method="POST" action="{{ url_for('post_comment', post_id=post.id) }}">
     {{ form.hidden_tag() }}

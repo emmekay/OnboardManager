@@ -4,10 +4,10 @@
 <h1>All Blog Posts</h1>
 <a href="descposts" class="btn btn-outline-primary">Sort Post Descending</a><nbsp>   </nbsp> <a href="ascposts" class="btn btn-outline-primary">Sort Post Ascending</a><br><br> <!-- Ref 8 - Modified code to create buttons--> 
 {% for post in posts %}
-<a href="{{ url_for('post', post_id=post.id) }}"><img src="{{ url_for('static', filename='img/' + post.image_file) }}"><br>
-   "{{post.title}}"</a>&nbsp <br>
-   by {{ post.user.username }}<br>
-<p>{{ post.content }}</p>
+<a href="{{ url_for('post', post_id=post.id) }}"><img src="{{ url_for('static', filename='img/' + post.image_file) }}">
+  <p><large>"{{post.title}}"</large></a>&nbsp <br>
+   by {{ post.user.username }}
+{{ post.content }}</p>
 
 {% endfor %}
 {% endblock content %}
