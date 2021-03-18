@@ -4,10 +4,10 @@ from blog.models import User, Post, Comment
 from blog.forms import RegistrationForm, LoginForm, CommentForm
 from flask_login import login_user, logout_user, login_required, current_user  
 
-@app.route("/")
-@app.route("/home")
+@app.route("/", methods = ['GET', 'POST']) #  #7 code modified from
+@app.route("/home", methods = ['GET', 'POST']) # #7 modiefied 
 def home():
-    posts = Post.query.all()
+    posts = Post.query.order_by()
     return render_template('home.html', posts=posts)
 
 
@@ -18,6 +18,14 @@ def about():
 @app.route("/thankyou")
 def thankyou():
     return render_template('thankyou.html', title='Thank You!')
+
+@app.route("/privacy")
+def privacy():
+    return render_template('privacy.html', title='Privacy Policy')
+
+@app.route("/terms")
+def terms():
+    return render_template('terms.html', title='Terms of Use')
 
 @app.route("/post/<int:post_id>")
 def post(post_id):

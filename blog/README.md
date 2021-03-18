@@ -8,6 +8,16 @@ CMT120 - Web Application Development Coursework
 
 [OPTIONAL] References:
 
+Garfinkel, S., 2004. Security and Usability: Keep It Simple. [online] CSO Online. Available at: <https://www.csoonline.com/article/2117849/security-and-usability--keep-it-simple.html> [Accessed 12 March 2021].
+
+Morville, P., 2021. What is Usability?. [online] The Interaction Design Foundation. Available at: <https://www.interaction-design.org/literature/topics/usability#:~:text=Usability%20is%20a%20measure%20of,deliverable%E2%80%94to%20ensure%20maximum%20usability.> [Accessed 17 March 2021].
+
+Singh, A., 2021. Top 10 VS Code extensions for 2021 - LogRocket Blog. [online] LogRocket Blog. Available at: <https://blog.logrocket.com/top-10-vs-code-extensions-2021/> [Accessed 7 March 2021].
+
+Techopedia.com. 2021. What is Software Security? - Definition from Techopedia. [online] Available at: <https://www.techopedia.com/definition/24866/software-security> [Accessed 15 March 2021].
+
+
+Ugino, M., 2018. Everything You Need To Know About Chatbots For Your Online Business - Marketing Insider Group. [online] Marketing Insider Group. Available at: <https://marketinginsidergroup.com/content-marketing/everything-need-know-chatbots-online-business/> [Accessed 17 March 2021].
 
 
 # Sourcing
