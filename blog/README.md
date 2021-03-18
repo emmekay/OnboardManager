@@ -35,6 +35,8 @@ Ugino, M., 2018. Everything You Need To Know About Chatbots For Your Online Busi
 
 # 7 https://www.iconfinder.com/iconsets/fantasy-social-1 - used for all social media icons 
 
+# 8 https://stackoverflow.com/questions/24491514/link-bootstrap-button - modified code to create buttons for ascending & descending posts 
+
 Use this method if in code 
 // Code to perform bubble sort
 // taken from Stack Overflow post by A.C Oder 20-6-2004

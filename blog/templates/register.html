@@ -4,7 +4,7 @@
     {{ form.csrf_token }} <br>
     <img src="{{ url_for('static', filename='img/members.jpg') }}" >
     <h1>Sign up below to access member's privileges!</h1>
-    {{ form.username.label }} {{ form.username(placeholder="Choose a Username") }}  <!-- Ref # 4 - Placeholder info for all placeholder links in this section --> <br> <br>
+    <!-- Ref # 4 - Placeholder info for all placeholder links in this section --> <br> <br>
     {{ form.firstname.label }} {{ form.firstname(placeholder="Enter your First Name") }} <br> <br>
     {{ form.lastname.label }} {{ form.lastname(placeholder="Enter your Last Name") }} <br> <br>
     {{ form.email.label }} {{ form.email(placeholder="Enter your Email") }} <br> <br>

@@ -3,11 +3,12 @@ from blog import app, db
 from blog.models import User, Post, Comment
 from blog.forms import RegistrationForm, LoginForm, CommentForm
 from flask_login import login_user, logout_user, login_required, current_user  
+from sqlalchemy import desc, asc 
 
-@app.route("/", methods = ['GET', 'POST']) #  #7 code modified from
-@app.route("/home", methods = ['GET', 'POST']) # #7 modiefied 
+@app.route("/")
+@app.route("/home")
 def home():
-    posts = Post.query.order_by()
+    posts = Post.query.order_by(asc(Post.date)).all()
     return render_template('home.html', posts=posts)
 
 
@@ -15,9 +16,17 @@ def home():
 def about():
     return render_template('about.html', title='About Me')
 
-@app.route("/thankyou")
-def thankyou():
-    return render_template('thankyou.html', title='Thank You!')
+@app.route("/descposts")
+def descposts():
+    posts = Post.query.order_by(desc(Post.date)).all()
+    return render_template('home.html', posts=posts)
+
+
+@app.route("/ascposts")
+def ascposts():
+    posts = Post.query.order_by(asc(Post.date)).all()
+    return render_template('home.html', posts=posts)
+    
 
 @app.route("/privacy")
 def privacy():
