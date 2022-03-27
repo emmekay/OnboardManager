@@ -1,11 +1,3 @@
-CMT120 - Web Application Development Coursework
-
-1. URL of your website: http://finalblog-finalblog.apps.cs.cf.ac.uk/about
-
-2. Student number: 2101138
-
-3. Full (40 characters) CHECKSUM of your last commit on GitLab: 
-
 Blog Post References:
 
 Garfinkel, S., 2004. Security and Usability: Keep It Simple. [online] CSO Online. Available at: <https://www.csoonline.com/article/2117849/security-and-usability--keep-it-simple.html> [Accessed 12 March 2021].
