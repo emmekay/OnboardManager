@@ -19,6 +19,9 @@ Photo by FLY:D on Unsplash - Picture used with Security, Usability Posted royalt
 
 Photo by Ferenc Almasi on Unsplash - Used for VS Code Picture 
 
+Under construction picture - by Mathieu Stern from Unsplash 
+  
+
 # Code Sourcing
 # 1 http://www.pickatutorial.com/tutorial/html/simpletextanimation.htm - Used for finding coding for text animation on thankyou.html
 

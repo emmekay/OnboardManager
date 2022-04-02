@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
-<img src="{{ url_for('static', filename='img/' + post.image_file) }}">
+<img src="{{ url_for('static', filename='img/' + post.image_file) }}" width="100" height="100" />
 
 <p><large>"{{ post.title }}"</large>&nbsp <br> Author: {{ post.user.username }}<br>
 {{ post.content }}</p>
@@ -8,7 +8,7 @@
 <form method="POST" action="{{ url_for('post_comment', post_id=post.id) }}">
     {{ form.hidden_tag() }}
 
- 
+
 
     <div class="">
         {{ form.comment.label }} {{ form.comment }}
