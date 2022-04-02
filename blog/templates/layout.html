@@ -60,7 +60,7 @@
         </div>
 
     </div>
-
+    <!-- Side bar settings--> 
     <div class="sidebar">
     
         <a href="{{ url_for('home') }}">Home</a>
@@ -68,7 +68,9 @@
         <a href="{{ url_for('register') }}">Register</a>
         <a href="{{ url_for('login') }}">Login</a>
         <a href="{{ url_for('admin.index') }}">Admin</a>
-        <a href="https://www.instagram.com/mighteteche" target="_blank">
+        <!--Social Media Redirect-->
+        <a href="#social_media">Connect on Social Media</a>
+        <!--<a href="https://www.instagram.com/mighteteche" target="_blank">
             <img src="{{ url_for('static', filename='img/instagram_small.png') }}"></a>
         <a href="https://www.linkedin.com/in/emilia-kobina" target="_blank">
             <img src="{{ url_for('static', filename='img/linkedin_small.png') }}"></a>
@@ -77,11 +79,9 @@
         <a href="https://www.twitter.com" target="_blank">
             <img src="{{ url_for('static', filename='img/twitter_small.png') }}"></a>
         <a href="https://www.youtube.com" target="_blank">
-            <img src="{{ url_for('static', filename='img/youtube_small.png') }}"></a>
+            <img src="{{ url_for('static', filename='img/youtube_small.png') }}"></a>-->
     
     </div>
-
-    <div 
         
     <div id="content"> 
         {% block content %} 
@@ -89,12 +89,12 @@
     </div>
 
     <footer>
-       <br><br>
+    <br><br>
         &nbsp| <a href="{{ url_for('home') }}">Home</a>&nbsp|
         <a href="{{ url_for('about') }}">About Me</a>&nbsp|
         <a href="{{ url_for('register') }}">Register</a>&nbsp|
         <a href="{{ url_for('login') }}">Login</a>&nbsp| <br> <br><br>
-        Connect with me on Social Media <br><br>
+        <section id="social_media">Connect with me on Social Media</section><br><br>
         |&nbsp;<a href="https://www.instagram.com/mighteteche" target="_blank">
             <img src="{{ url_for('static', filename='img/instagram_small.png') }}"></a>&nbsp;|
         <a href="https://www.linkedin.com/in/emilia-kobina" target="_blank">
@@ -105,7 +105,6 @@
             <img src="{{ url_for('static', filename='img/twitter_small.png') }}"></a>&nbsp;|
             <a href="https://www.youtube.com" target="_blank">
                 <img src="{{ url_for('static', filename='img/youtube_small.png') }}"></a>&nbsp;|
-                 
         <br><br>|&nbsp<small>&copy; Copyright 2021, Emilia Kobina </small>
         &nbsp| <small><a href="{{ url_for('privacy') }}">Privacy Policy</a></small>&nbsp|
         <small><a href="{{ url_for('terms') }}">Terms of Use</a></small>&nbsp|
