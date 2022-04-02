@@ -11,7 +11,11 @@ header {
 }
 
 content {
-    padding-left: 20px;
+    position: absolute;
+    top: 25px;
+    right: 24px;
+    bottom: 25px;
+    left: 250px;
 }
 h1 {
     background-color: da#008b8b;
@@ -62,8 +66,9 @@ p {
 }
 
 img {
-    max-height: 300px;
-    max-width: 600px;
+    width: auto;
+    max-width: 75%;
+    height: auto;
 }
 
 footer {
@@ -136,7 +141,8 @@ a:active {
 .sidebar {
     color: rgb(16, 158, 194);
     height: 100%;
-    width: 190px;
+    width: 220px;
+    max-width: 30%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -162,14 +168,51 @@ a:active {
 }
 
 /* Style the main content */
-.content {
-    margin-left: 170px; /* Same as the width of the sidenav */
+/*.content {
+    margin-left: 450px; Same as the width of the sidenav
     padding: 0px 10px;
-}
+}*/
 
 /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
+    /*content {padding-top: 15px;}*/
 }
+
+/*Blog Container*/ 
+.blog.container {
+    color: rgb(16, 158, 194);
+    height: auto;
+    width: auto;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /*background-color: rgb(135, 168, 228);*/
+    overflow-x: hidden;
+    /*padding-top: 8px;*/
+}
+
+.blog.container h1 {
+    font-size: 26px;
+}
+
+.blog.container p {
+    font-size: 18px;
+}
+/* Style sidebar links */
+.blog.container a {
+    padding: 10px 8px 6px 16px;
+    text-decoration: bold;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+
+/* Style links on mouse-over */
+.blog.container a:hover {
+    font-size: 25px;
+    color: #f1f1f1;
+}
+
 

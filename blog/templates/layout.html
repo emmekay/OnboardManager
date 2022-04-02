@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Ref # 3 - Bootstrap -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  <!-- Ref # 3 - Bootstrap -->
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
@@ -24,6 +24,7 @@
 </script> <!-- #2 on README - https://code2care.org/pages/add-animated-scrolling-to-html-page-title-script#:~:text= -->
 </head>
 
+<content>
 <body>
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
     <div id="header"> 
@@ -66,6 +67,7 @@
         <a href="{{ url_for('home') }}">Home</a>
         <a href="{{ url_for('about') }}">About Me</a>
         <a href="{{ url_for('projects') }}">Projects</a>
+        <a href="{{ url_for('blogs') }}">Blogs</a>
         <a href="{{ url_for('admin.index') }}">Admin</a>
         <a href="#social_media">Social Media</a>
         <a href="{{ url_for('logout') }}">Logout</a>
@@ -74,6 +76,7 @@
         <a href="{{ url_for('home') }}">Home</a>
         <a href="{{ url_for('about') }}">About Me</a>
         <a href="{{ url_for('projects') }}">Projects</a>
+        <a href="{{ url_for('blogs') }}">Blogs</a>
         <a href="{{ url_for('register') }}">Register</a>
         <a href="{{ url_for('login') }}">Login</a>
         <!--Social Media Redirect-->
@@ -106,10 +109,10 @@
             <img src="{{ url_for('static', filename='img/twitter_small.png') }}"></a>&nbsp;|-->
             <a href="https://www.youtube.com" target="_blank">
                 <img src="{{ url_for('static', filename='img/youtube_small.png') }}"></a>&nbsp;|
-        <br><br>|&nbsp<small>&copy; Copyright 2021, Emilia Kobina </small>
-        &nbsp;| <small><a href="{{ url_for('privacy') }}">Privacy Policy</a></small>&nbsp;|
-        <small><a href="{{ url_for('terms') }}">Terms of Use</a></small>&nbsp;|
-        <small><a href="{{ url_for('home') }}">Return to Top of Page</a></small>&nbsp;|
+        <br><br>| &nbsp; &nbsp; <small>&copy; Copyright 2021, Emilia Kobina </small>&nbsp;
+        &nbsp;| &nbsp;<small><a href="{{ url_for('privacy') }}">Privacy Policy</a></small>&nbsp; &nbsp;|
+        &nbsp;<small><a href="{{ url_for('terms') }}">Terms of Use</a></small>&nbsp; &nbsp;| &nbsp;
+        &nbsp;<small><a href="{{ url_for('home') }}">Return to Top of Page</a></small>&nbsp; &nbsp;|
 
     
     
@@ -124,7 +127,7 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>  <!-- Ref #3 - Bootstrap -->
 </body>
-
+</content>
 
 
 </html> 

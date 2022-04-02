@@ -8,8 +8,22 @@ from sqlalchemy import desc, asc
 @app.route("/")
 @app.route("/home")
 def home():
+    return render_template('home.html', title='Home')
+
+@app.route("/blogs")
+def blogs():
     posts = Post.query.order_by(asc(Post.date)).all()
-    return render_template('home.html', posts=posts)
+    return render_template('blogs.html', posts=posts, title='Blogs')
+
+@app.route("/descposts")
+def descposts():
+    posts = Post.query.order_by(desc(Post.date)).all()
+    return render_template('blogs.html', posts=posts, title='Blogs')
+
+@app.route("/ascposts")
+def ascposts():
+    posts = Post.query.order_by(asc(Post.date)).all()
+    return render_template('blogs.html', posts=posts, title='Blogs')
 
 
 @app.route("/about")
@@ -19,18 +33,6 @@ def about():
 @app.route("/projects")
 def projects():
     return render_template('projects.html', title='Projects')
-
-@app.route("/descposts")
-def descposts():
-    posts = Post.query.order_by(desc(Post.date)).all()
-    return render_template('home.html', posts=posts)
-
-
-@app.route("/ascposts")
-def ascposts():
-    posts = Post.query.order_by(asc(Post.date)).all()
-    return render_template('home.html', posts=posts)
-    
 
 @app.route("/privacy")
 def privacy():
