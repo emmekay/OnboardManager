@@ -9,7 +9,9 @@
 <a href="{{ url_for('post', post_id=post.id) }}"><img src="{{ url_for('static', filename='img/' + post.image_file) }}"><br>
 <h1>"{{post.title}}"</a></h1>
 <p>by {{ post.user.username }}</p>
-<p2>{{ post.content }}</p2>
+<p2>{{ post.content }}</p2><br>
+<img src="{{ url_for('static', filename='img/wave.png') }}">
+<br><br><br>
 
 {% endfor %}
 {% endblock content %}
