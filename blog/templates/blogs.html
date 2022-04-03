@@ -3,7 +3,7 @@
 {% block content %} 
 <h1>All Blog Posts</h1>
 <a href="descposts" class="btn btn-outline-primary">Sort Post Descending</a><nbsp>   </nbsp> <a href="ascposts" class="btn btn-outline-primary">Sort Post Ascending</a><br><br> <!-- Ref 8 - Modified code to create buttons--> 
-<div class="blog container">
+
 {% for post in posts %}
 
 <a href="{{ url_for('post', post_id=post.id) }}"><img src="{{ url_for('static', filename='img/' + post.image_file) }}"><br>
@@ -12,5 +12,4 @@
 <p2>{{ post.content }}</p2>
 
 {% endfor %}
-</div>
 {% endblock content %}
