@@ -1,7 +1,15 @@
 {% extends "layout.html" %}
 {% block content %}
     <h1>Projects</h1>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Under Construction</title>
+        <script>
+            let d = new Date();
+            alert("As of " + d + " I'm currently working on some projects behind the scene, but I'll update this page soon. ");
+        </script>
+    </head>
     <img src="{{ url_for('static', filename='img/underconstruction.jpg') }}"></a>
 
     <br> <p>This page is currently under construction.  Stay tuned to checkout some of my personal projects</p>
@@ -9,7 +17,7 @@
 
 </p>
 
-<img src="{{ url_for('static', filename='img/EmBlue.png') }}"></a>
+<% print('Hello') %>
 
 
 {% endblock content %}
