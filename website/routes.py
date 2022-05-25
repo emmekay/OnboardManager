@@ -10,7 +10,7 @@ from sqlalchemy import desc, asc
 def home():
     return render_template('home.html', title='Home')
 
-@app.route("/blogs")
+@app.route("/sops")
 def blogs():
     posts = Post.query.order_by(asc(Post.date)).all()
     return render_template('blogs.html', posts=posts, title='Blogs')

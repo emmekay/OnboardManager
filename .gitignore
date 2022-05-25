@@ -234,3 +234,5 @@ pip-selfcheck.json
 
 secrets/ 
 secret/
+
+__init__.py
