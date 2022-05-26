@@ -11,9 +11,9 @@ def home():
     return render_template('home.html', title='Home')
 
 @app.route("/sops")
-def blogs():
+def sops():
     posts = Post.query.order_by(asc(Post.date)).all()
-    return render_template('blogs.html', posts=posts, title='Blogs')
+    return render_template('sops.html', posts=posts, title='Standard Operating Procedures')
 
 @app.route("/descposts")
 def descposts():
@@ -33,6 +33,10 @@ def about():
 @app.route("/projects")
 def projects():
     return render_template('projects.html', title='Projects')
+
+@app.route("/timesheet")
+def timesheet():
+    return render_template('timesheet.html', title='Timesheet')
 
 @app.route("/privacy")
 def privacy():
