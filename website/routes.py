@@ -10,10 +10,30 @@ from sqlalchemy import desc, asc
 def home():
     return render_template('home.html', title='Home')
 
-@app.route("/sops")
+@app.route("/faq")
 def sops():
     posts = Post.query.order_by(asc(Post.date)).all()
-    return render_template('sops.html', posts=posts, title='Standard Operating Procedures')
+    return render_template('faq.html', posts=posts, title='Frequently Asked Questions')
+
+@app.route("/clientportal")
+def about():
+    return render_template('clientportal.html', title='Client Portal')
+
+@app.route("/workoutlibrary")
+def about():
+    return render_template('workoutlibrary.html', title='Workout Library')
+
+@app.route("/myprofile")
+def about():
+    return render_template('myprofile.html', title='My Profile')
+
+@app.route("/purchase")
+def about():
+    return render_template('purchase.html', title='Purchase')
+
+@app.route("/mydiet")
+def about():
+    return render_template('mydiet.html', title='My Diet')
 
 @app.route("/descposts")
 def descposts():
@@ -25,7 +45,6 @@ def ascposts():
     posts = Post.query.order_by(asc(Post.date)).all()
     return render_template('blogs.html', posts=posts, title='Blogs')
 
-
 @app.route("/about")
 def about():
     return render_template('about.html', title='About Me')
@@ -33,10 +52,6 @@ def about():
 @app.route("/projects")
 def projects():
     return render_template('projects.html', title='Projects')
-
-@app.route("/timesheet")
-def timesheet():
-    return render_template('timesheet.html', title='Timesheet')
 
 @app.route("/privacy")
 def privacy():
